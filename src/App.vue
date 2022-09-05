@@ -1,28 +1,39 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id = "app">
+    <link href = 'https://fonts.googleapis.com/css?family=Source Sans Pro' rel = 'stylesheet'>
+    <link href = 'https://fonts.googleapis.com/css?family=Inter' rel = 'stylesheet'>
+    <h1>Добавление товара</h1>
+    <addproduct />
+    <products />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  import addproduct from '@/components/addproduct';
+  import products from '@/components/products'
+  export default {
+    name: 'app',
+    components: {
+      addproduct,
+      products
+    }
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+	background: rgba(255, 254, 251, 0.8);
+}
+
+h1 {
+  position: absolute;
+  left: 32px;
+  top: 13px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 35px;
+  color: #3F3F3F;
 }
 </style>
