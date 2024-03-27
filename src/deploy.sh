@@ -8,4 +8,4 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@bitbucket.org:<gelendvagen>/<gelendvagen>.bitbucket.io.git master
+git push -f git@bitbucket.org:<Gelendvagen>/<Gelendvagen>.bitbucket.io.git master
