@@ -1,12 +1,11 @@
-#!/usr/bin/env sh
-
-# остановить публикацию при ошибках
-set -e
-
 # сборка
 npm run build
 
-# переход в каталог сборки
+# переход в каталог итоговой сборки
 cd dist
 
-git push -f git@github.com:<gelendvagen>/<frontend-developer-test>.git master:gh-pages
+git init
+git add -A
+git commit -m 'deploy'
+
+git push -f git@bitbucket.org:<gelendvagen>/<gelendvagen>.bitbucket.io.git master
