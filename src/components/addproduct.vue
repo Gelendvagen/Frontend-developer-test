@@ -33,8 +33,7 @@ export default {
             text3: null,
             isTextTouched1: false,
             isTextTouched2: false,
-            isTextTouched3: false,
-            
+            isTextTouched3: false,    
         }
     },
     computed: {
